@@ -198,11 +198,17 @@ main{
 
 
 /* FORM /INPUTS */
+
+fieldset{
+    border: none;
+}
+
 label{
+    color: var(--font-precio);
     display: block;
 }
 
-input{
+input,textarea{
     border: none;
     border-bottom: 1px solid var(--font-precio);
 }
