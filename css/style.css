@@ -39,8 +39,11 @@ body {
         "main"
         "footer";
 }
+
+
 /*NAVEGADOR PRINCIPAL*/
 nav{
+    text-transform: uppercase;
     background-color: var(--bg-color);
     grid-area: navegador;
     justify-content: center;
@@ -193,6 +196,16 @@ main{
     max-width: 100%;
 }
 
+
+/* FORM /INPUTS */
+label{
+    display: block;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid var(--font-precio);
+}
 
 /*FOOTER*/
 footer{
