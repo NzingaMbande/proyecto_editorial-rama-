@@ -206,11 +206,15 @@ fieldset{
 label{
     color: var(--font-precio);
     display: block;
+    margin-bottom: 0.4rem;
 }
 
 input,textarea{
     border: none;
     border-bottom: 1px solid var(--font-precio);
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
 }
 
 
@@ -225,6 +229,7 @@ fieldset button:hover{
     color: var(--bg-color);
     background-color: var(--font-color2);
 }
+
 
 /*FOOTER*/
 footer{
