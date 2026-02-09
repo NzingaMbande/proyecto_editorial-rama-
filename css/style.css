@@ -160,7 +160,6 @@ h2{
 
 
 h3{
-    font-size: clamp(var(--h3-section-min), var(--h3-section-ideal), var(--h3-section-max));
     color: var(--font-color2);
     font-family: var(--font-titular);
     text-transform: uppercase;
