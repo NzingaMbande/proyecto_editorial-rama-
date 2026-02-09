@@ -151,6 +151,8 @@ h2{
     color: var(--font-color2);
     margin-bottom: 1rem;
     text-justify: auto;
+    margin-bottom: 1rem;
+    text-justify: auto;
     font-weight: 700;
     
   
@@ -285,8 +287,19 @@ main{
 
 
 /* CATALOGO */
+section h3{
+    color: var(--font-color2);
+    font-family: var(--font-text);
+    text-transform: uppercase;
+    font-weight: bolder;
+    border-bottom: 2px solid var(--font-color2);
+    margin-bottom: 0.7rem;
+    margin-top: 1rem;
 
-.catalogo div{
+}
+
+.catalogo section div {
+    display: inline-block;
     border: 1px solid crimson;
     max-width: 100%;
     max-height: 100%;
@@ -297,22 +310,14 @@ main{
 }
 
 .catalogo figure{
-    border: 1px solid crimson;
     justify-content: center;
     align-items: center;
 }
 
 .catalogo div figure img{
     width: 100%;
-    
+    height: 100%;
 }
-
-
-.catalogo figure img{
-    max-width: 100%;
-    max-height: 100%;
-}
-
 
 .catalogo div figcaption{
     color: var(--font-color2);
@@ -406,7 +411,6 @@ fieldset button:hover{
     background-color: var(--bg-color);
 }
 
-
 /*TALENTOS*/
 
 .talento{
@@ -451,13 +455,14 @@ fieldset button:hover{
     font-size: var(--p-min), var(--p-ideal), var(--p-max);
 }
 
+
+
 /*FOOTER*/
 footer{
     color: var(--font-precio);
     background-color: #373636;
     grid-area: footer;
     display: flex;
-    align-items: center;
     align-content: space-evenly;
     justify-content: center;
     margin-top: 1rem;
@@ -469,9 +474,9 @@ footer img{
     width: 90%;
 }
 
-footer>figure img{
-    border-radius: 60px;
-    width: 80%;
+footer img{
+    border-radius: 5px;
+    width: 90%;
     height: 45%;
 }
 
