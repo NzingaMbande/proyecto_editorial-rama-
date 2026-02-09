@@ -52,7 +52,7 @@ body {
     background-color:var(--bg-color);
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 5vh 65vh 1fr 20vh;
+    grid-template-rows: 5vh 65vh 1fr 25vh;
     grid-template-areas:
         "navegador"
         "header"
@@ -462,22 +462,60 @@ footer{
     background-color: #373636;
     grid-area: footer;
     display: flex;
-    align-content: space-evenly;
+    align-content: center;
     justify-content: center;
     margin-top: 1rem;
+    flex-direction: column;
+    gap: 3rem;
 }
 
+#contenedor-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+    
+}
+footer ul>li{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 
-footer img{
-    border-radius: 5px;
-    width: 90%;
 }
 
-footer img{
-    border-radius: 5px;
-    width: 90%;
-    height: 45%;
+footer ul>li a{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    align-self: flex-start;
+    color: var(--border-color);
 }
+
+#contenedor-footer>h2{
+    align-self: center;
+    color: var(--font-color);
+    font-family: var(--font-titular);
+    
+}
+#contenedor-footer>div{
+    display: flex;
+    flex-direction: column ;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#contenedor-footer>div h3{
+    margin: 0;
+    text-decoration: none;
+    border: none
+}
+
+footer>p{
+    align-self: center;
+    font-size: 0.7rem;
+    color: var(--border-color);
+}
+
 
 /*MEDIA-Q TABLET*/
 @media(min-width: 768px){
