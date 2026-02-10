@@ -23,7 +23,7 @@
     --font-color: #ca3737;
     --font-color2:  #f7c973;
     --font-color3: #e64949;
-    --font-precio: rgba(255, 248, 248, 0.913);
+    --font-precio: rgba(219, 214, 214, 0.913);
 
     --h1-min: 2rem;
     --h1-ideal: 1.147rem + 3.210vw;
@@ -49,6 +49,7 @@ body {
     font-family: var(--font-text);
     width: 100%;
     min-height: 100vh;
+    color: var(--font-precio);
     background-color:var(--bg-color);
     display: grid;
     grid-template-columns: 100%;
@@ -131,7 +132,6 @@ header{
     scroll-snap-type: x mandatory;
     width: 100%;
     height: 100%;
-    scrollbar-color: var(--font-color) var(--bg-color);
 }
 
 .header-slider::-webkit-scrollbar{
@@ -174,7 +174,14 @@ nav span.material-symbols-outlined{
     color: var(--font-color);
 }
 
+small{
+    font-size: var(--p-min), var(--p-ideal), var(--p-max);
+}
 
+p{
+    font-size: var(--p-min), var(--p-ideal), var(--p-max);
+
+}
 h2{
     /* text-shadow: 0.5px 0.5px 8px var(--font-color3); */
     font-weight: 100;
@@ -211,6 +218,8 @@ main{
 }
 
 #intro{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     color: var(--border-color);
@@ -239,7 +248,7 @@ main{
     width: 100%;
 }
 
-.tarjeta-precio, .noticia{
+.tarjeta-revista, .noticia{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,7 +257,7 @@ main{
     min-width: 30vw;
 }
 
-.tarjeta-precio>div{
+.tarjeta-revista>div{
     display: flex;
     align-items: center;
     gap: 1.5rem;
@@ -259,31 +268,33 @@ main{
     min-width: 50vw;
 }
 
-.tarjeta-precio figure, 
+.tarjeta-revista figure, 
 .noticia figure{
     flex: 1 1 10%;
     display: flex;
     align-items: center;
 }
 
-.tarjeta-precio figure>img,
+.tarjeta-revista figure>img,
 .noticia figure>img{
     width: 100%;
     object-fit: contain;
 }
-.tarjeta-precio figure>img:hover,
+
+.tarjeta-revista figure>img:hover,
 .noticia figure>img:hover{
     box-shadow: 1px 1px 20px 1px var(--font-color3);
     transition: ease 0.7s;
     cursor: pointer;
 }
 
-.tarjeta-precio>div button, .contenedor>.noticia button, #intro>button{
+.tarjeta-revista>div button, .contenedor>.noticia button, #intro>button{
     text-align: center;
     width: 70%;
     border-radius: 1rem;
     background-color: transparent;
     padding: 0.5rem;
+    margin-top: 0.5rem;
     border: 1px solid var(--border-color);
     color: var(--font-precio);
     justify-self: flex-end;
@@ -291,7 +302,8 @@ main{
 
 
 #intro>button{
-    width: 20%;
+    margin-right: 2rem;
+    width: 35%;
     align-self: flex-end;
 
 }
@@ -299,7 +311,7 @@ main{
     width: 100%;
 }
 
-.tarjeta-precio>div button:hover,
+.tarjeta-revista>div button:hover,
 .contenedor>.noticia button:hover,
 #intro>button:hover{
     cursor: pointer;
@@ -308,19 +320,19 @@ main{
     transition: ease 0.4s;
 }
 
-.tarjeta-precio>div p{
+.tarjeta-revista>div p{
     justify-self: flex-start;
     color: var(--font-precio);
     font-weight: 500;
     font-size: 0.8rem;
 }
 
-.tarjeta-precio h2{
+.tarjeta-revista h3, .tarjeta-revista h2{
     display: none;
     align-self: center;
-    position: absolute;
+    position: relative;
     background-color:var(--bg-color2);
-    z-index: 100;
+    z-index: 1000;
 }
 
 
@@ -558,7 +570,7 @@ footer>p{
         flex-direction: row;
         max-width: 100%;
         flex: 1 1 25%;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
     main{
         width: 80%;
@@ -570,7 +582,7 @@ footer>p{
     }
 
 
-    .tarjeta-precio{
+    .tarjeta-revista{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -622,16 +634,20 @@ footer>p{
     .contenedor, .contenedor-talentos{
         max-width: 95%;
         gap: 2vw;
-        margin-top: 3rem;   
-        margin-bottom: 3rem;
+        margin-top: 2rem;   
+        margin-bottom: 2rem;
     }
 
-    .tarjeta-precio, .noticia{
+    .tarjeta-revista, .noticia{
         max-width: 30%;
         flex: 1 1 10%;
         margin-bottom: 3rem;
-        min-width: 10vw;
     }
+
+    .tarjeta-revista{
+        min-width: 245px;
+    }
+
 
     .noticia{
         max-width: 30%;
@@ -729,5 +745,12 @@ footer>p{
         width: 60%;
     }
 
+    #intro>button{
+        width: 20%;
+    }
+
+    main{
+        margin-bottom: 10rem;
+    }
 }
 
