@@ -403,10 +403,14 @@ main{
     font-weight: bold;
 }
 
+form{
+    width: 90%;
+}
+
+
 fieldset{
     border: none;
     text-transform: uppercase;
-    
 }
 
 label{
@@ -433,6 +437,7 @@ input,textarea{
 
 textarea{
     border-left: 1px solid var(--font-precio);
+    
 }
 
 fieldset button{
