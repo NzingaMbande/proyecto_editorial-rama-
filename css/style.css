@@ -52,8 +52,6 @@ body {
     width: 100%;
     min-height: 100vh;
     font-family: var(--font-text);
-    width: 100%;
-    min-height: 100vh;
     color: var(--font-precio);
     background-color:var(--bg-color);
     display: grid;
@@ -167,10 +165,9 @@ h1{
     font-size: clamp(var(--h1-min), var(--h1-ideal), var(--h1-max));
     position: absolute;
     font-weight: 100;
-    align-self: flex-end;
     right: 1rem;
     bottom: 0.5rem;
-    font-weight: 100;
+    align-self: flex-end;
 }
 
 nav span.material-symbols-outlined{
@@ -184,17 +181,13 @@ small{
 }
 
 p{
-    font-size: var(--p-min), var(--p-ideal), var(--p-max);
-
+    font-size: clamp(var(--p-min), var(--p-ideal), var(--p-max));
 }
 h2{
     /* text-shadow: 0.5px 0.5px 8px var(--font-color3); */
-    font-weight: 100;
     letter-spacing: 0.1rem;
     font-family: var(--font-titular2);
     color: var(--font-color2);
-    margin-bottom: 1rem;
-    text-justify: auto;
     margin-bottom: 1rem;
     text-justify: auto;
     font-weight: 700;
@@ -205,7 +198,7 @@ h2{
 h3{
     color: var(--font-color2);
     font-family: var(--font-titular2);
-    font-size: clamp(var(--h3-min), var(--h3-ideal), var(--h3-max));
+    font-size: clamp(var(--h3-section-min), var(--h3-section-ideal), var(--h3-section-max));
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     border-bottom: 2px solid var(--font-color2);
@@ -237,6 +230,7 @@ main p {
 }
 
 #intro >p{
+    color: rgb(150, 148, 148);
     padding-bottom: 1rem;
     
 }
@@ -546,7 +540,7 @@ iframe{
 }
 
 .talento>div p{
-    font-size: var(--p-min), var(--p-ideal), var(--p-max);
+    font-size: clamp(var(--p-min), var(--p-ideal), var(--p-max));
 }
 
 
@@ -642,12 +636,7 @@ footer>p{
         min-width: 20vw;
     }
     .talento{
-        display: flex;
         flex-direction: row;
-        align-items: center;
-        padding: 1rem;
-        margin-bottom: 2rem;
-        color: var(--border-color);
         }
 
     .contenedor-talentos{
@@ -661,20 +650,8 @@ footer>p{
         min-width: 10%;
         flex: 1 0 25%;
     }
-    .talento>figure img{
-        max-width: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-
     .talento>div{
-        display: flex;
-        flex-direction: column;
         padding-left: 2rem;
-    }
-
-    .talento>h2{
-        display: none;
     }
 
 }
@@ -735,17 +712,11 @@ footer>p{
 
     nav>p{
         padding-left: 2rem;
-        font-weight: 100;
         width: 50%;
-        color: var(--font-color);
-        font-family: var(--font-titular);
     }
     h1{
-        font-family: var(--font-titular);
-        color:var(--font-color3);
         right: 2rem;
         bottom: 0.2rem;
-        font-weight: 100;
     }
 
     main{
@@ -754,13 +725,7 @@ footer>p{
     }
 
     .talento{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         justify-content: center;
-        padding: 1rem;
-        margin-bottom: 2rem;
-        color: var(--border-color);
         }
 
     .contenedor-talentos{
@@ -776,24 +741,8 @@ footer>p{
         max-width: 15%;
         flex: 1 1 20%;
     }
-    .talento>figure img{
-        max-width: 100%;
-        object-fit: cover;
-        object-position: center;
-    }
-
     .talento>div{
-        display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        padding-left: 2rem;
-    }
-
-    .talento>h2{
-        display: none;
-    }
-
-    .talento>div{
         width: 60%;
     }
 
