@@ -175,7 +175,7 @@ nav span.material-symbols-outlined{
 }
 
 small{
-    font-size: var(--p-min), var(--p-ideal), var(--p-max);
+    font-size: 0.7rem;
 }
 
 p{
@@ -219,7 +219,6 @@ main{
 }
 
 #intro{
-    margin-top: 4rem;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -275,6 +274,26 @@ main{
     flex: 1 1 10%;
     display: flex;
     align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.tarjeta-revista>figure>figcaption{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    align-self: flex-end;
+    padding-right: 0.3rem;
+    padding-bottom: 0.3rem;
+    text-align: right;
+
+}
+
+img:hover {
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    -webkit-filter: hue-rotate(240deg) saturate(3.3) grayscale(50%);
+    /* FF 35+ */
+    filter: hue-rotate(240deg) saturate(3.3) grayscale(50%);
 }
 
 .tarjeta-revista figure>img,
@@ -296,7 +315,6 @@ main{
     border-radius: 1rem;
     background-color: transparent;
     padding: 0.5rem;
-    margin-top: 0.5rem;
     border: 1px solid var(--border-color);
     color: var(--font-precio);
     justify-self: flex-end;
@@ -671,7 +689,7 @@ footer>p{
     }
 
     nav{
-        width: 70%;
+        width: 75%;
         border-radius: 0% 0% 0.5rem 0.5rem;
 
     }
@@ -710,6 +728,7 @@ footer>p{
     }
 
     main{
+        margin-top: 3rem;
         width: 70%;
     }
 
