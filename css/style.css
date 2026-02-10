@@ -9,7 +9,7 @@
     top:0;
 }
 
-:root {
+:root{
     font-size: 16px;
     scroll-behavior: smooth;
     height: 100%;
@@ -45,10 +45,10 @@
     --p-min: 1rem;
     --p-ideal: 0.964rem + 0.134vw;
     --p-max: 1.125rem;
-}
+    }
 
 
-body {
+body{
     width: 100%;
     min-height: 100vh;
     font-family: var(--font-text);
@@ -222,28 +222,10 @@ main{
     display: grid;
     grid-area: main;
     width: 90%;
-    height: 100vh;
     justify-self: center;
     overflow: hidden;
     margin-bottom: 2.5rem;
-    /* overflow-y: auto;
-    scroll-snap-type: y mandatory; */
 }
-
-/* SECCIONES */
-/* M: He añadido scroll a las secciones */
-/* main section{
-    scroll-snap-align: start;
-    scrollbar-width: thin;
-}
-
-main section::-webkit-scrollbar{
-    height: 2px;
-}
-
-main section::-webkit-scrollbar-track{
-    background: var(--bg-color);
-} */
 
 #intro{
     margin-top: 4rem;
@@ -395,10 +377,11 @@ main section::-webkit-scrollbar-track{
 }
 
 
-.catalogo section div p{
+.catalogo section div p{ 
     margin-bottom: 0.2rem;
     text-align: left;
     padding-left: 0.5rem;
+
 }
 
 .catalogo section div button{
@@ -409,10 +392,6 @@ main section::-webkit-scrollbar-track{
 /* CONTACTO FORM /INPUTS */
 .contacto section:first-child{
     margin-bottom: 1.2rem;
-}
-
-.contacto section:last-child{
-    width: 40%;
 }
 
 .contacto iframe{
