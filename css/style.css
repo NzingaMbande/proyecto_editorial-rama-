@@ -23,8 +23,8 @@
     --font-color: #ca3737;
     --font-color2:  #f7c973;
     --font-color3: #e64949;
-    --font-gris: rgb(150, 148, 148);
-    --font-gris-claro: rgb(185, 183, 183);
+    --font-gris: rgb(119, 119, 119);
+    --font-gris-claro: rgb(186, 186, 186);
 
     --h1-min: 2rem;
     --h1-ideal: 1.400rem + 3.000vw;
@@ -322,6 +322,7 @@ main{
 .tarjeta-revista figure>img{
     width: 100%;
     object-fit: contain;
+    transition: box-shadow 1s ease-in-out;
 }
 
 .noticia figure>img{
@@ -329,6 +330,7 @@ main{
     object-fit: cover;
     aspect-ratio: 16/9;
     object-position: center top;
+    transition: box-shadow 1s ease-in-out;
 }
 
 main figure>img{
@@ -349,19 +351,43 @@ main figure>img{
 .tarjeta-revista figure>img:hover,
 .noticia figure>img:hover{
     box-shadow: 1px 1px 20px 2px var(--font-color3);
-    transition: ease 0.7s;
     cursor: pointer;
 }
 
-.tarjeta-revista>div button, .contenedor>.noticia button, #intro>button{
+.boton-favorito{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    z-index: 10;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background-color: transparent;
+    color: var(--border-color);
+    font-size: clamp(var(--p-min), var(--p-ideal), var(--p-max));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton-favorito:hover{
+    background-color: var(--font-color3);
+    color: var(--font-color2);
+}
+
+button{
     text-align: center;
     width: 70%;
     border-radius: 1rem;
     background-color: transparent;
     padding: 0.5rem;
     border: 1px solid var(--border-color);
-    color: var(--font-gris);
+    color: var(--font-gris-claro);
     justify-self: flex-end;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 #intro>button{
@@ -374,13 +400,10 @@ main figure>img{
     width: 100%;
 }
 
-.tarjeta-revista>div button:hover,
-.contenedor>.noticia button:hover,
-#intro>button:hover{
+button:hover{
     cursor: pointer;
     background-color: var(--bg-color3);
     color: rgb(215, 212, 212);
-    transition: ease 0.4s;
 }
 
 .tarjeta-revista>div p{
@@ -392,15 +415,10 @@ main figure>img{
 
 .tarjeta-revista h3, .tarjeta-revista h2{
     display: none;
-    align-self: center;
+    /* align-self: center;
     position: relative;
     background-color:var(--bg-color2);
-    z-index: 1000;
-}
-
-
-.noticia p{
-    color: var(--font-gris);
+    z-index: 1000; */
 }
 
 
@@ -501,10 +519,11 @@ fieldset button{
     padding-left: 0;
     font-weight: bolder;
     text-transform: uppercase;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 fieldset button:hover{
-    color: var(--font-gris);
+    color: var(--font-gris-claro);
     background-color: var(--bg-color3);
 }
 
