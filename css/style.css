@@ -18,13 +18,13 @@
     --font-titular2: "New Amsterdam", sans-serif;
     --bg-color: #262626;
     --bg-color2: rgb(127, 255, 212);
-    --bg-color3: rgb(16, 141, 108);
+    --bg-color3: rgb(47, 94, 81);
     --border-color: rgba(139, 139, 139, 0.758);
     --font-color: #ca3737;
     --font-color2:  #f7c973;
     --font-color3: #e64949;
-    --font-gris: rgb(119, 119, 119);
-    --font-gris-claro: rgb(186, 186, 186);
+    --font-gris: rgb(155, 152, 152);
+    --font-gris-claro: rgb(202, 200, 200);
 
     --h1-min: 2rem;
     --h1-ideal: 1.400rem + 3.000vw;
@@ -42,7 +42,6 @@
     --h3-section-ideal: 1.120rem + 0.400vw;
     --h3-section-max: 1.6rem;
 
-    
     --p-min: 1rem;
     --p-ideal: 0.975rem + 0.125vw;
     --p-max: 1.125rem;
@@ -173,8 +172,6 @@ header{
 
 }
 
-
-
 h1{
     font-family: var(--font-titular);
     color:var(--font-color3);
@@ -268,7 +265,7 @@ main{
     border-bottom: none;
 }
 #intro >p{
-    color: rgb(150, 148, 148);
+    color: var(--font-gris-claro);
     padding-bottom: 1rem;
     
 }
@@ -367,6 +364,12 @@ main{
     transition: box-shadow 1s ease-in-out;
 }
 
+.noticia figure>iframe{
+    border-radius: 0.5rem;
+    padding: 0;
+    margin: 0;
+}
+
 main figure>img{
     border-radius: 0.5rem;
 }
@@ -410,6 +413,7 @@ main figure>img{
 .boton-favorito:hover{
     background-color: var(--font-color3);
     color: var(--font-color2);
+    transform: scale(1.25);
 }
 
 button{
@@ -437,14 +441,14 @@ button{
 button:hover{
     cursor: pointer;
     background-color: var(--bg-color3);
-    color: rgb(215, 212, 212);
+    color: var(--font-gris-claro);
 }
 
 .tarjeta-revista>div p{
     justify-self: flex-start;
     color: var(--font-gris);
     font-weight: 500;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .tarjeta-revista h3, .tarjeta-revista h2{
@@ -795,13 +799,12 @@ footer>p{
 
     }
 
-
     nav>p{
         padding-left: 2rem;
         width: 50%;
     }
     h1{
-        right: 2rem;
+        right: 1.2rem;
         bottom: 0.2rem;
     }
 
