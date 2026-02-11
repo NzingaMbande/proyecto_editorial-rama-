@@ -160,9 +160,8 @@ header{
     scroll-snap-align: start;
 }
 
-.header-slider img:last-child{
+.header-slider img:last-child,.header-slider img:nth-child(2){
     object-position: 70%;
-
 }
 
 h1{
