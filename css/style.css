@@ -215,12 +215,10 @@ nav label.material-symbols-outlined{
     text-align: center;
 }
 
-small{
-    font-size: 0.7rem;
-}
-
 cite{
+    color: var(--font-gris-claro);
     font-style: normal;
+    font-size: var(--font-text);
 }
 
 p{
@@ -303,6 +301,7 @@ footer>h2{
 .contenedor-contacto{
     flex-direction: column;
     flex-wrap: nowrap;
+    gap: 4rem;
 }
 
 .contenedor>h2, 
@@ -363,7 +362,7 @@ footer>h2{
 }
 
 .tarjeta-revista figure,
-.tarjeta-revista2 figure
+.tarjeta-revista2 figure,
 .noticia figure{
     flex: 1 1 10%;
     display: flex;
@@ -389,9 +388,14 @@ footer>h2{
 }
 
 .tarjeta-revista>figure>figcaption>p{
-    font-weight: 600;
+    font-size: 0.9rem;
+    font-weight: 200;
 }
 
+.tarjeta-revista figcaption>p{
+    font-size: 1rem;
+    font-weight: 600;
+}
 
 
 .tarjeta-revista figure>img,
@@ -518,13 +522,15 @@ button:hover,
 }
 
 
-.tarjeta-revista2 div p{ 
+.tarjeta-revista2 div p, 
+.tarjeta-revista2 div cite{ 
     color: var(--font-gris-claro);
     margin-bottom: 0.2rem;
     text-align: left;
     padding-left: 0.5rem;
-
+    font-size: 0.9rem;
 }
+
 
 .tarjeta-revista2 div button{
     width:48%;
@@ -590,8 +596,13 @@ fieldset button{
 }
 
 .contenedor-contacto address{
+    font-style: normal;
     border-left: 2px solid var(--font-color2);
     padding-left: 0.4rem;
+}
+
+.contenedor-contacto address>p:nth-of-type(1){
+    font-weight: 700;
 }
 
 iframe{
