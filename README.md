@@ -33,6 +33,7 @@ principal factor diferenciador.
 - Utilizar CSS moderno para crear layouts complejos.
 - Implementar microinteracciones visuales.
 - Mantener un código limpio y organizado.
+- Trabajo en un entorno colaborativo.
 
 ---
 
@@ -94,6 +95,7 @@ Se han utilizado unidades relativas (`rem`, `%`, `vw`) y tipografía fluida medi
 ---
 
 ## Decisiones técnicas relevantes
+
 - Decidimos utilizar GitHub desde el inicio para contar con el control de versiones y poder trabajar comodamente con los aportes de cada uno.
 - Escogimos grid para el layout del body por su versatilidad y facilidad de implementación ese contexto, nos permite ajustar los tamaños
 deseados para cada uno de los componentes y facilita el diseño responsive.
@@ -125,12 +127,13 @@ Mejoré mucho las habilidades de uso de flex/grid y de las tipografias fluidas, 
 Aprendí como hacer los análisis de Lighthouse con developer tools de Google Chrome.
 
 Mary:
+
 Durante la creación de la estructura de la página mi mayor reto fue ajustar las tarjetas y su contenido, ya que dependiendo de cada página, 
 el contenido de cada main varía pero todas la páginas debían mantener una estructura y estética común. Además había que tener el cuenta el responsive y controlar los ajustes dependiento 
-del tamaño de la pantalla sin sacrificar el aspecto informativo o comercial de la página.
+del tamaño de la pantalla sin sacrificar el aspecto informativo o comercial de la página. Intenté implementar un snap-scroll vertical, con la idea facilitar que el usuario se moviese por las distintas secciones de la web pero no conseguí ponerlo de una manera efectiva, que además combinase correctamente con el layout.
 
 Gracias a ello aprendí como se crea una buena base para el HTML, el uso correcto de Github para mantener mi trabajo y el del compañero al día a pesar de los cambios. 
-Como priorizar ciertas líneas de código, el uso correcto de selectores dependiendo del main donde se trabajaba, que también ayudaba a no pisar el trabajo del compañero.
+Como priorizar ciertas líneas de código, el uso correcto de selectores dependiendo del main donde se trabajaba, que también ayudaba a no pisar el trabajo del compañero. Mejoré el uso de flex y mi entendimiento de grid, y como se gestionan las fuentes fluidas.
 
 
 ## Mejoras futuras
@@ -147,6 +150,7 @@ Ejemplos:
 - Ampliar categorías.
 - Optimización de rendimiento ya que el sitio hace uso de muchas imagenes y poco texto.
 - Mejora de accesibilidad.
+- Un modo claro para la página.
 
 
 ## Demo
