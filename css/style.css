@@ -597,6 +597,8 @@ fieldset button{
     font-style: normal;
     border-left: 2px solid var(--font-color2);
     padding-left: 0.4rem;
+    font-style: normal; 
+    font-weight: lighter;
 }
 
 .contenedor-contacto address>p:nth-of-type(1){
